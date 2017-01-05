@@ -1,0 +1,9 @@
+This is a simple subset sum problem in which we have to pick up numbers from an array such that it sums up to X. For the basic subset sum look into this link : http://www.geeksforgeeks.org/dynamic-programming-subset-sum-problem/
+
+But in this problem we won't be able to use the above method because we can not create an array of one of the dimension as 10^18. So we have to look in a different way. 
+
+On looking closer we see that there is a special feature in this sequence. Here every number is greater than the sum of the previous numbers. This is known as a Super Increasing sequence. So, the basic logic behind this is that find the number X, if it is there in the sequence then we print "yes". If it is not present then we find the number just less than X and subtract it from X and update the X to this new value. We do this because if we do not use the number just less than X for making X, then all the numbers less than X also cannot make it to X ( Property of Super Increasing Sequence ). By continuing this if X>0 after all the numbers exhaust then we print "no".
+
+ 
+
+As the sequence is sorted in Increasing order, searching takes O ( log N ) time and for N numbers maximum it has to do N searches. So the overall complexity reduces to O ( N log N ).
