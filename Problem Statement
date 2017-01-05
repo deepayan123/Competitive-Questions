@@ -1,0 +1,29 @@
+2 players A & B takes turns alternatively and play a game. The game is that they have N numbers on a paper. At any turn a player can replace one of the numbers by any of its factor ( except for 1 & itself ). The player who is unable to make a move looses the game. Find the winner of the game if A starts the game and both play optimally.
+
+Input:
+The first line has an interger T denoting the number of test cases. The first line of each test case has an integer N denoting the number of numbers on the paper.
+The next line consists of N numbers.
+
+Output:
+For each test case output the winner, either A or B on a new line.
+
+Constraints:
+1<=T<=100
+1<=N<=1000
+1<=Ai<=1000
+
+Example:
+Input:
+2
+3
+5 7 3
+4
+2 4 7 11
+
+Output:
+B
+A
+
+Explanation:
+In the first case, the numbers cannot be replaced by any other number so A can not make a move and B is the winner.
+In the second case, player A can replace 4 by 2 and thus the numbers left will be 2 2 7 & 11 and all are ireplacable and thus A is the winner.
