@@ -1,0 +1,4 @@
+This problem is a combinatorial game where we have to find the Grundy values of each pile and XOR them up to check if it is 0 or not. If yes then second player wins else the third player wins. 
+For basic concept look into : http://www.geeksforgeeks.org/combinatorial-game-theory-set-4-sprague-grundy-theorem/
+
+For finding the grundy value we take the mex of all its factors and thus we have a complexity of O( (max (Ai) )2). This grundy values we have precomputed. The rest of the part can be done in O(N) as we only have to XOR up their grundy values.
