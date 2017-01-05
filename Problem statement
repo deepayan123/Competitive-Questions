@@ -1,0 +1,35 @@
+N children are made to stand in a queue, where everyone is given a number Ai. Then the teacher writes a number S on a page and passes it to the first person. The first person adds all the numbers written on the paper ( for now only S is there ) and adds his number Ai to it and writes on the paper and passes to the second one. The second one does the same i.e. adds all the numbers on the paper ( S & (S+Ai) ) and adds his own number and passes it to next, and the process continues...
+
+Given this series of numbers you have to determine whether a number X can be formed by adding some of the numbers from the given series or not. 
+
+Input:
+The first line contains T, denoting the number of Test cases. Each test case has 2 lines.
+The first line of each test case has 3 numbers S, N and X.
+The second line consists of N numbers denoting the Ai s. 
+
+Output:
+For each case output "yes" if X can be formed using the numbers in the series else print "no".
+
+Constraints:
+T<=10
+N<=100000
+1<=S, Ai, X<= 1018
+
+Example:
+
+Input:
+2
+
+1 4 7
+1 2 4 2
+
+100 2 500
+51 88
+
+Output:
+yes
+no
+
+Explanation:
+In the first example, the sequence of numbers are 1, 2, 5, 12, 22. Using 2 & 5 we can form 7.
+In the second example, the sequence of numbers are 100, 151 & 339. So, using these numbers we cannot form 500.
