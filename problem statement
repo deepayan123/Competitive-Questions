@@ -1,0 +1,29 @@
+Given N numbers find out a number such that it is divides all the numbers except 1. If it is not possible then print -1.
+
+Input:
+The first line consists of an integer T denoting the number of test cases. For each case there are 2 lines.
+The first line of each test case consists of a number N. The second line contains N numbers.
+
+Output:
+For each case output a single integer on a new line denoting the answer to the problem.
+
+Constraints:
+T<=50
+N<=100000
+Ai<=109
+
+Example:
+Input:
+2
+4
+2 3 6 12
+5
+9 8 7 6 5
+
+Output:
+3
+-1
+
+Explanation:
+In the first case the 3 divides all the numbers except 2. So, it is possible answer.
+In the second case there are no numbers that can divide all the numbers except for one, so it is -1. 
