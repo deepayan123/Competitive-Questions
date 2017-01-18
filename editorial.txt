@@ -1,0 +1,6 @@
+One of the possible logic could be that we can take every number starting from 2 to the largest number and count the number of numbers divisible. If it is equal to N-1 then print the number else at the end if we find no such number then we print -1.
+But using this logic the complexity would be O(max(Ai)*N) which would not be possible to pass the cases.
+
+The main logic of the program is that if we can find the GCD of all numbers except Ai and if that number is divisible by the GCD then that will be the answer. 
+This is because the GCD of the remaining numbers is bound to divide all the numbers and we have found that it is not dividing Ai, so basically we have found a number which divides all the numbers except for Ai. 
+For implementing this concept we have used DP to store the GCD of the numbers from left and from right. The corer cases being if the Ai is the first or last number of the list, in which we need to handle carefully.
